@@ -8,10 +8,11 @@ public class StringPlayground {
 		// Strings are NOT mutable - cannot change them!!
 		// There are two ways to create a string:
 		
-		// String Literal
+		// String Literal - live in the pool to save memory
 		String s1 = "Hello";
 		
-		String s2 = new String("Hello");
+		// use a constructor
+		String s2 = new String("Hello"); // forcing Java to create a new object in the HEAP outside of the String pool.
 //		System.out.println(s1);
 //		System.out.println(s2);
 		
@@ -53,11 +54,13 @@ public class StringPlayground {
 //		
 //		String g2 = greeting + " Nice to meet you."; // Not best practices
 		
+		// substring()
 		String sub = sb.substring(10);
 		System.out.println(sub);
 		int index = sb.indexOf("N");
 		System.out.println(index);
 		
+		// replace()
 		sb.replace(0, 19, "");
 		System.out.println(sb);
 		
