@@ -22,23 +22,37 @@ public class CarGarage {
 //		c.setColor("purple");
 //		
 //		System.out.println(c);
+//		
+//		Car c = new Car();
+//		c.drive();
+//		
+//		Subaru cross = new Subaru("Crosstrek", 12, "blue");
+//		
+//		System.out.println(cross);
+//		
+//		cross.drive();
+//		cross.driveSomeDistance(3000);
+//		System.out.println(cross);
+//		
+//		Car newCar = new Subaru("another car", 1000, "silver");
+//		
+//		newCar.drive();
+//		newCar.drive(10);
+////		 // only defined for Subaru objects - this object is defined as a car. 
+//		System.out.println(newCar);
 		
-		Car c = new Car();
-		c.drive();
+		Person dan = new Person("Dan", 100);
 		
-		Subaru cross = new Subaru("Crosstrek", 12, "blue");
+		Subaru s = new Subaru("Crosstrek", 6000, "red");
 		
-		System.out.println(cross);
+		dan.setCar(s);
+		System.out.println(dan);
 		
-		cross.drive();
-		cross.driveSomeDistance(3000);
-		System.out.println(cross);
+		Car c = new Car("Honda", 75000, "Silver");
+		Person p = new Person("Dumbledore", 500, c);
+		System.out.println(p);
 		
-		Car newCar = new Subaru("another car", 1000, "silver");
-		
-		newCar.drive();
-		newCar.drive(10);
-//		 // only defined for Subaru objects - this object is defined as a car. 
-		System.out.println(newCar);
+		Person ron = new Person("Ron", 50, new Car("Ford", 54000, "blue"));
+		System.out.println(ron);
 	}
 }
