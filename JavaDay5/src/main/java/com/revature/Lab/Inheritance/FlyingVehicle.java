@@ -6,6 +6,13 @@ public class FlyingVehicle extends Vehicle{
 	private short wings;
 	private Engine engine;
 	
+	public FlyingVehicle() {}
+	
+	public FlyingVehicle(short wings, Engine engine) {
+		this.wings = wings;
+		this.engine = engine;
+	}
+	
 	// Getter and Setters
 	public short getWings() { return this.wings; }
 	public void setWings(short wings) { this.wings = wings; }
