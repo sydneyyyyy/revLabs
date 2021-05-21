@@ -1,4 +1,4 @@
-package com.revature.methods;
+package com.revature.labs.methods;
 
 /*
  * Anatomy of a method

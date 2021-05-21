@@ -1,4 +1,4 @@
-package com.revature.labs.arrays;
+package com.revature.labs.Arrays;
 
 public class ArrayLength {
 

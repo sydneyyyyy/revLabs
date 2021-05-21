@@ -1,4 +1,4 @@
-package com.revature.Labs.StaticVsInstance;
+package com.revature.labs.StaticVsInstance;
 
 public class Test {
 

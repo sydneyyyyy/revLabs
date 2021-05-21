@@ -1,4 +1,4 @@
-package com.revature.Labs.StringMethods;
+package com.revature.labs.StringMethods;
 
 public class StringMethods {
 

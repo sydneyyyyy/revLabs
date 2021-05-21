@@ -1,4 +1,4 @@
-package com.revature.Labs.Method;
+package com.revature.labs.Method;
 
 public class MethodDeclaration {
 

@@ -1,4 +1,4 @@
-package com.revature.labs.dowhile;
+package com.revature.labs.DoWhile;
 
 public class ExampleOne {
 

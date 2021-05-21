@@ -1,4 +1,4 @@
-package com.revature.labs.whileloops;
+package com.revature.labs.WhileLoops;
 
 public class ExampleOne {
 

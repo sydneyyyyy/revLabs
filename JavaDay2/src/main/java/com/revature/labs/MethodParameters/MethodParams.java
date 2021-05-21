@@ -1,4 +1,4 @@
-package com.revature.Labs.MethodParameters;
+package com.revature.labs.MethodParameters;
 
 public class MethodParams {
 

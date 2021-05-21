@@ -1,4 +1,4 @@
-package com.revature.Labs.MethodReturnType;
+package com.revature.labs.MethodReturnType;
 
 public class ReturnTypes {
 

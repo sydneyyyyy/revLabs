@@ -1,4 +1,4 @@
-package com.revature.Labs.CompositeRelationships;
+package com.revature.labs.CompositeRelationships;
 
 public class ClassB {
 

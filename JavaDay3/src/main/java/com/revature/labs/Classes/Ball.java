@@ -1,4 +1,4 @@
-package com.revature.Labs.Classes;
+package com.revature.labs.Classes;
 
 public class Ball {
 	// ball properties

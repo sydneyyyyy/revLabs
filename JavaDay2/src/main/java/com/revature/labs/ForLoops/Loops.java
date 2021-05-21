@@ -1,4 +1,4 @@
-package com.revature.labs.forloops;
+package com.revature.labs.ForLoops;
 
 public class Loops {
 	

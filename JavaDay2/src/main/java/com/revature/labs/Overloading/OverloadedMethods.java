@@ -1,4 +1,4 @@
-package com.revature.Labs.Overloading;
+package com.revature.labs.Overloading;
 
 public class OverloadedMethods {
 
