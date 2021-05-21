@@ -1,5 +1,10 @@
 package com.revature.models;
 
+import java.util.ArrayList;
+
+import com.revature.exceptions.PlanetHasNoMoonsException;
+
+
 // Every class inherits from the Object Class - implicitly
 public class Planet {
 
@@ -12,6 +17,9 @@ public class Planet {
 	private double mass;
 	private double radius;
 	private boolean atmosphere;
+	// Create a instance variable for planet - that holds that planet's moons.
+	private ArrayList<Moons> moons; 
+	// Code a getter and setter to retrieve and set the planet's moons
 	
 	
 	
@@ -27,14 +35,43 @@ public class Planet {
 		this.mass = mass;
 		this.radius = radius;
 		this.atmosphere = atmosphere;
+
 	}
+	
+	public Planet(String name, double mass, double radius, boolean atmosphere, ArrayList<Moons> moons) {
+		super();
+		this.name = name;
+		this.mass = mass;
+		this.radius = radius;
+		this.atmosphere = atmosphere;
+		this.moons = moons;
+	}
+	
+	
 
 
 	// Getters and Setters
+	
+	
 	public String getName() {
 		return name;
 	}
 
+
+	public ArrayList<Moons> getMoons() throws PlanetHasNoMoonsException {
+		if (this.moons == null) {
+			throw new PlanetHasNoMoonsException("This planet has no moons!");
+			
+		} else {
+			return this.moons;
+		}
+		
+//		return moons;
+	}
+
+	public void setMoons(ArrayList<Moons> moons) {
+		this.moons = moons;
+	}
 
 	public void setName(String name) {
 		
@@ -82,12 +119,18 @@ public class Planet {
 		return (this.mass * G) / (Math.pow(this.radius, 2)); // Math Library 
 		
 	}
-	
 
 	@Override
 	public String toString() {
-		return "Planet [name=" + name + ", mass=" + mass + ", radius=" + radius + ", atmosphere=" + atmosphere + "]";
+		return "Planet [name=" + name + ", mass=" + mass + ", radius=" + radius + ", atmosphere=" + atmosphere
+				+ ", moons=" + this.moons + "]";
 	}
+	
+
+	
+	
+	
+	
 	
 	
 	
