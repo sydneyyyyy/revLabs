@@ -53,6 +53,7 @@ public class SortingPlayground  {
 		
 		
 		System.out.println("\nIntList after sort....");
+		
 		Collections.sort(intList);
 		for (int i = 0; i < intList.size(); i++) {
 			System.out.println(intList.get(i));
@@ -86,7 +87,7 @@ public class SortingPlayground  {
 		
 		// key - value pairs
 		Map<Integer, String> treeMap = new TreeMap<Integer, String>();
-		
+		// sorted as they are inserted
 		treeMap.put(1, "One");
 		treeMap.put(2, "Two");
 		treeMap.put(3, "Three");
@@ -108,12 +109,17 @@ public class SortingPlayground  {
 		}
 		
 		Map<User, Integer> umap = new TreeMap<User, Integer>();
+		
 		umap.put(new User("John", 55), 1001);
 		umap.put(new User("Steve", 35), 54848);
-		
+		umap.put(new User("Mary", 19), 78362);
+		umap.put(new User("Mavis", 88), 288264);
+		umap.put(new User("Nick", 28), 4194616);
+
 		umap.forEach((user, num) -> System.out.println(user + " => " + num));
 		
-		
+		// can't instantiate this class because it is Private!
+//		Collections col = new Collections();
 	}
 	
 	
