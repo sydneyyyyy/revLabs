@@ -1,6 +1,11 @@
 package com.revature.utils;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
 
 /*
  * JDBC = Java Database Connectivity -> a java library with classes to connect to a database
@@ -56,8 +61,25 @@ public class JDBCConnection {
 				// We need our credentials
 				// url (endpoint), username, password
 				
+				Properties props = new Properties();
+				
+				InputStream input = JDBCConnection.class.getClassLoader().getResourceAsStream("connection.properties");
+				props.load(input);
+				
+				String url = props.getProperty("url");
+				String username = props.getProperty("username");
+				String password = props.getProperty("password");
+				
+				conn = DriverManager.getConnection(url, username, password);
+				return conn;
+				
+			} else {
+				
+				return conn;
+				
 			}
-		} catch (Exception e) {
+			
+		} catch (SQLException | IOException | ClassNotFoundException e) {
 			
 			e.printStackTrace();
 			
