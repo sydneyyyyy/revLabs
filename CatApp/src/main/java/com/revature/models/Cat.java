@@ -6,7 +6,7 @@ public class Cat {
 	private String name;
 	private Integer age;
 	
-	private Breed breed;
+	private Breed breed; // this will end up being a FK to our breeds table
 
 	public Cat() {
 		super();

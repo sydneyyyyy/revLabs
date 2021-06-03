@@ -13,7 +13,7 @@ public class GarbageDriver {
 		
 		System.out.println("Some amount of time passes...");
 		
-		
+		.finalize();
 		try {
 			
 			Thread.sleep(5000);
