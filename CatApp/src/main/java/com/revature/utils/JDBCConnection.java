@@ -90,6 +90,19 @@ public class JDBCConnection {
 		return null;
 	}
 	
+	// don't need in your final code 
+	public static void main(String[] args) {
+		
+		Connection conn = JDBCConnection.getConnection();
+		
+		if (conn != null) {
+			System.out.println("Connection Successful");
+		} else {
+			System.out.println("Connection unsuccessful");
+		}
+		
+	}
+	
 	
 	
 	

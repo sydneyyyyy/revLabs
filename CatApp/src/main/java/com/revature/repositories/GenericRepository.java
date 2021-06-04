@@ -2,12 +2,14 @@ package com.revature.repositories;
 
 import java.util.List;
 
+import com.revature.models.Breed;
+
 public interface GenericRepository<T> {
 
 	// These will be the methods that align with CRUD operations (how we interact with the database)
 	
 	// CREATE - adding to database
-	public T add(T t);
+	public Breed add(T t);
 	
 	
 	// READ - get things from database
@@ -17,12 +19,12 @@ public interface GenericRepository<T> {
 	
 	
 	// UPDATE 
-	public void update(T change);
+	public boolean update(T t);
 	
 	
 	
 	// DELETE
-	public void delete(T t);
+	public boolean delete(T t);
 	
 	
 }
