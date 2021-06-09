@@ -5,3 +5,5 @@ INFO  | 2021-05-26 12:21:52 | [main] logging.LoggerPlayground (LoggerPlayground.
 WARN  | 2021-05-26 12:21:52 | [main] logging.LoggerPlayground (LoggerPlayground.java:11) - The variable 'num' is not used.
 INFO  | 2021-05-26 12:21:52 | [main] logging.LoggerPlayground (LoggerPlayground.java:19) - Info Level
 WARN  | 2021-05-26 12:24:29 | [main] logging.LoggerPlayground (LoggerPlayground.java:11) - The variable 'num' is not used.
+WARN  | 2021-06-09 12:49:34 | [main] logging.LoggerPlayground (LoggerPlayground.java:10) - The variable 'num' is not used.
+WARN  | 2021-06-09 13:54:19 | [main] logging.LoggerPlayground (LoggerPlayground.java:10) - The variable 'num' is not used.

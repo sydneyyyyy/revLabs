@@ -113,7 +113,7 @@ public class BreedDAO implements GenericRepository<Breed> {
 	@Override
 	public boolean update(Breed b) {
 		
-		String sql = "update breeds set id = ?, breed = ? where id = ?;";
+		String sql = "update breeds set breed = ? where id = ?;";
 		
 		try {
 			

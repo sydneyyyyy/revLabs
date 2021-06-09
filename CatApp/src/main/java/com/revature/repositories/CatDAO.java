@@ -15,8 +15,30 @@ public class CatDAO implements GenericRepository<Cat>{
 	private Connection conn = JDBCConnection.getConnection();
 
 	@Override
-	public Breed add(Cat c) {
-		// TODO Auto-generated method stub
+	public Cat add(Cat c) {
+		
+		// uses Stored Procedure - required in your bank app
+		String sql = "call add_cat(?, ?, ?, ?);";
+		
+		try {
+			PreparedStatement ps = conn.prepareStatement(sql);
+			
+			ps.setString(1, c.getName());
+			ps.setString(2, Integer.toString(c.getAge()));
+			ps.setString(3, Integer.toString(c.getBreed().getId()));
+			ps.setString(4, Integer.toString(1));
+			
+			// execute 
+			// iterate
+			// done
+			
+		} catch(SQLException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		
 		return null;
 	}
 
