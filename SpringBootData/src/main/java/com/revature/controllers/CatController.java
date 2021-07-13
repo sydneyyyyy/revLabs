@@ -35,10 +35,19 @@ public class CatController {
 	// add in Post, Update, and Delete Mapping
 	// Test with Postman
 	
+	// GET -> localhost:8080/cats/9
+	
 	@GetMapping(path="/{id}")
 	public Cat getCat(@PathVariable("id") int id) {
 		return cs.getCat(id);
 	}
+	
+	/* POST -> localhost:8080/cats/add
+	 * @PostMapping(path="/add", consumes="application/json", produces="application/json")
+	 * 
+	 * 
+	 * */
+	
 	
 	@PostMapping()
 	public Cat addCat(@RequestBody Cat c) {
@@ -50,6 +59,7 @@ public class CatController {
 		return cs.updateCat(c);
 	}
 	
+	// DELETE -> localhost:8080/cats/8
 	@DeleteMapping(path="/{id}")
 	public void deleteCat(@PathVariable("id") int id) {
 		cs.deleteCat(id);
